@@ -1,0 +1,16 @@
+name = []
+capacity = []
+
+while True:
+    cafe = input().split()
+    if cafe[0] == 'MEOW':
+        break
+    else:
+        name.append(cafe[0])
+        capacity.append(cafe[1])
+    capacity_int = [int(i) for i in capacity]
+
+
+max_capacity = max(capacity_int)
+index = capacity_int.index(max_capacity)
+print(name[index])
